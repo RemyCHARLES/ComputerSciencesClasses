@@ -22,9 +22,9 @@ int main(void){
                 int pixel_index;
                 uint8_t r, g, b, l;
                 for(pixel_index = 0; pixel_index < w * h; pixel_index++){
-                    fread(&r, sizeof(uint8_t), 1, bitmap);
-                    fread(&g, sizeof(uint8_t), 1, bitmap);
-                    fread(&b, sizeof(uint8_t), 1, bitmap);
+                    fread(&r, sizeof(unsigned char), 1, bitmap);
+                    fread(&g, sizeof(unsigned char), 1, bitmap);
+                    fread(&b, sizeof(unsigned char), 1, bitmap);
 
                     // Do your conversion process here
 
